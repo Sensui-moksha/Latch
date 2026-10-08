@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Latch Updates</title>
+    <link>https://raw.githubusercontent.com/Sensui-moksha/Latch/main/appcast.xml</link>
+    <description>Most recent updates for Latch.</description>
+    <language>en</language>
+    <item>
+      <title>Latch 1.0</title>
+      <pubDate>Thu, 08 Oct 2026 14:00:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Latch 1.0</h2>
+<ul>
+  <li>Initial release of Latch: Biometric Face &amp; Touch ID App Lock for macOS.</li>
+  <li>Instant, on-device facial recognition using Apple Vision and ArcFace Core ML.</li>
+  <li>Endpoint Security fail-closed system extension application interception.</li>
+  <li>Interactive Dynamic Notch UI with micro-animations and trackpad haptics.</li>
+  <li>Hardware-backed AES-256-GCM encryption in macOS Keychain.</li>
+  <li>Native Sparkle 2 automatic updates via GitHub Releases.</li>
+</ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/Sensui-moksha/Latch/releases/download/v1.0/Latch.dmg"
+        sparkle:version="1"
+        sparkle:shortVersionString="1.0"
+        length="17980615"
+        type="application/octet-stream"
+        sparkle:edSignature="LTh3cdXrK+vcfcG4mqomTVhGVj8p1/s0rS5YhylqN33xtY6pZAjn5U3txZa1KbILdeYXmNvXTx7MT1glII9bCw==" />
+    </item>
+  </channel>
+</rss>

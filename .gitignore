@@ -1,0 +1,51 @@
+# ==============================================================================
+# Latch Git Ignore Rules
+# ==============================================================================
+
+# macOS System Files
+.DS_Store
+*.swp
+*~
+
+# Source Code & Internal Implementation (Private until public release)
+glance/
+glance.xcodeproj/
+GlanceEndpointSecurityExtension/
+SecurityService/
+scripts/
+tools/
+.agents/
+.graphy/
+graphify-out/
+graphy-out/
+
+# Build Artefacts & Derived Data
+scratch/
+build/
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.mlmodelc
+
+# Internal Architectural Documentation (Root Only)
+/AUTHENTICATION_ARCHITECTURE.md
+/AUTHORIZATION_MODEL.md
+/SECURITY_ARCHITECTURE.md
+/SECURITY_THREAT_MODEL.md
+/SECURITY.md
+/CONTRIBUTING.md
+/RELEASING.md
+.github/copilot-instructions.md
+.github/workflows/ci.yml
+
+# Python Virtual Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Local Private Keys & Secrets
+*.key
+*.p12
+*.pem
+*.p8
