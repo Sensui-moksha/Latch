@@ -36,8 +36,7 @@ xcuserdata/
 /SECURITY.md
 /CONTRIBUTING.md
 /RELEASING.md
-.github/copilot-instructions.md
-.github/workflows/ci.yml
+.github/
 
 # Python Virtual Environments
 .venv/
