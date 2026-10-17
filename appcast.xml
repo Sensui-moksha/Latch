@@ -6,6 +6,28 @@
     <description>Most recent updates for Latch.</description>
     <language>en</language>
     <item>
+      <title>Latch 2.0</title>
+      <pubDate>Sat, 17 Oct 2026 23:40:00 +0530</pubDate>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<h2>Latch 2.0</h2>
+<ul>
+  <li>Gated General and Recognition Settings behind Touch ID session lock.</li>
+  <li>Robust Keychain resilience for Ad-Hoc and Development distribution.</li>
+  <li>Universal DMG packaging with zero 7-day expiration timers.</li>
+  <li>Hardened Runtime library validation compatibility with Sparkle updater.</li>
+  <li>Enhanced non-destructive session reset safeguarding enrolled face identities.</li>
+</ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/Sensui-moksha/Latch/releases/download/v2.0/Latch.dmg"
+        sparkle:version="2"
+        sparkle:shortVersionString="2.0"
+        length="17989923"
+        type="application/octet-stream"
+        sparkle:edSignature="1b1MGAqp+H2mNcUnlmMXcQcHjpdXmQOUxYmiO2zBvG8H2uao1mTm9RD8rPVW8D6dXfeZSlW4SDku3hh1yvFNAg==" />
+    </item>
+    <item>
       <title>Latch 1.0</title>
       <pubDate>Thu, 08 Oct 2026 14:00:00 +0000</pubDate>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>

@@ -83,3 +83,24 @@ The GitHub Actions workflow `.github/workflows/release.yml` will automatically b
    <string>9fbFN/c7AYvtyUETXcDTEtsFWLZ5o1EGVkqswULZw/I=</string>
    ```
 5. **Seamless Upgrade**: If valid, the update is mounted, extracted, swapped in `/Applications/Latch.app`, and reopened without user friction.
+ 
+---
+
+## Code Signing Policy: Ad-Hoc Signing for Public Releases
+
+When releasing public versions to GitHub without a paid Apple Developer ID certificate ($99/yr):
+
+- **Always use Ad-Hoc Signing (`SIGNING_IDENTITY="-"`)**:
+  Ad-hoc signing (`codesign --sign -`) signs the application bundle for execution on macOS without embedding Apple Development provisioning profiles.
+  
+- **Why Apple Development Signing Must NOT Be Used for Distribution**:
+  Free personal Apple Development profiles (`.provisionprofile`) have two severe limitations:
+  1. **7-Day Expiration**: Apple revokes personal profiles after exactly 7 days, causing macOS to kill the app with POSIX error 163 (`Launchd job spawn failed`).
+  2. **Device Hardware Lock**: Personal profiles contain an explicit list of provisioned device UDIDs. Distributing a build signed with a personal profile causes the app to fail immediately on any machine other than the developer's Mac.
+
+- **User First-Launch Experience**:
+  Ad-hoc signed binaries have no device lock and no expiration date. On first open, macOS Gatekeeper informs the user that the developer is unidentified. Users run the app by right-clicking `Latch.app` → **Open**, or by clicking **Open Anyway** in **System Settings → Privacy & Security**.
+
+- **Restoring Keychain / Resolving Signature Mismatches**:
+  If switching between development builds and distribution releases causes a `Keychain error: A required entitlement is not present` or locked session state, reinstall the application by dragging `Latch.app` into `/Applications` and replacing the existing file. Reinstalling updates the system's bundle signature registration and restores keychain access group bindings.
+

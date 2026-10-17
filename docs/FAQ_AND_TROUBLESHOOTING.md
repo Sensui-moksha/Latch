@@ -42,3 +42,11 @@ Because Latch is distributed independently via GitHub:
 1. Open Latch **Settings** from the menu bar.
 2. Under **Identities**, select your enrolled profile.
 3. Click **Delete Identity**. The AES-encrypted embedding file is securely unlinked from disk immediately.
+
+### "Keychain error: A required entitlement is not present" / Session Locked After Update
+If you update or replace Latch and encounter a keychain error or find the session unexpectedly locked:
+1. Quit **Latch**.
+2. Reinstall the app by dragging `Latch.app` from the new DMG into `/Applications` (choosing **Replace**).
+3. Relaunch `Latch.app`.
+4. Reinstalling refreshes macOS code signing attributes and keychain access group grants, restoring access to your enrolled face identities and session data.
+

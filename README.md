@@ -12,7 +12,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Proprietary%20%7C%20All%20Rights%20Reserved-red.svg" alt="Proprietary License"></a>
   <img src="https://img.shields.io/badge/macOS-15%2B-black.svg" alt="macOS 15+">
   <img src="https://img.shields.io/badge/Swift-SwiftUI-black.svg" alt="Swift">
-  <a href="https://github.com/Sensui-moksha/Latch/releases/latest"><img src="https://img.shields.io/badge/release-v1.0-blue.svg" alt="Latest Release"></a>
+  <a href="https://github.com/Sensui-moksha/Latch/releases/latest"><img src="https://img.shields.io/badge/release-v2.0-blue.svg" alt="Latest Release"></a>
 </p>
 
 Latch brings seamless, instant Face ID and Touch ID biometric protection to your Mac applications. Lock any sensitive app — Mail, Slack, Messages, Terminal, Photos, or Notes — and unlock it with a simple glance. 
@@ -119,5 +119,7 @@ Latch is currently distributed as signed binary releases. The complete source co
  
 Created and maintained by **Mokshagna** ([@Sensui-moksha](https://github.com/Sensui-moksha)).
 
+
 Copyright © 2026 Mokshagna. All Rights Reserved.  
 Protected under proprietary copyright law. Unauthorized copying, distribution, modification, reverse engineering, or reproduction of software or concepts is strictly prohibited. See [LICENSE](LICENSE) for full legal terms.
+
